@@ -24,6 +24,10 @@ export const CONFIG = {
 };
 ```
 
+## 欢迎到我的游戏里面测试效果
+
+<img src="https://github.com/shuishen49/easysdk/blob/main/code.jpeg?raw=true" alt="示例图片" width="300"/>
+
 ## 使用方法
 
 ### 初始化广告管理器
