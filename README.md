@@ -1,12 +1,13 @@
 
 # EasySDK
 
-EasySDK 是一个用于 Cocos Creator 3.x 的广告插件，支持多平台广告集成，包括抖音和微信平台。
+EasySDK 是一个用于 Cocos Creator 3.x 的广告插件，支持多平台广告集成，包括抖音、微信和 4399 平台。
 
 ## 功能
 
 - 支持抖音广告集成
 - 支持微信广告集成
+- 支持 4399 广告集成
 - 简化广告展示流程
 - 支持广告成功和失败回调
 
@@ -73,6 +74,18 @@ export class AdComponent extends Component {
     }
 }
 ```
+
+### 新增功能：4399 广告集成
+
+4399 广告必须在 `load.ts` 文件中加载。
+
+1. 在 `load.ts` 文件中添加以下代码：
+
+```typescript
+import './4399/modifyUrls';
+```
+
+2. 使用 4399 打包工具 `run.bat` 进行打包。确保打包工具所在文件夹包含一个 `web-mobile` 文件夹，该文件夹是利用 Cocos 导出的源码。
 
 ### 示例代码
 
